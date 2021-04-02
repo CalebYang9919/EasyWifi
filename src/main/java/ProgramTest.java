@@ -10,8 +10,8 @@ import java.util.Map;
 
 
 public class ProgramTest {
-//    private static final String AFTER_PHONE_NUMS_PATH = "C:/Users/Administrator/AfterPhoneNums.json";
-//    private static final String PHONE_NUMS_PATH = "C:/Users/Administrator/PhoneNums.txt";
+//    private static final String AFTER_PHONE_NUMS_PATH = "C:/Users/19359/AfterPhoneNums.json";
+//    private static final String PHONE_NUMS_PATH = "C:/Users/19359/PhoneNums.txt";
 
     private static final String AFTER_PHONE_NUMS_PATH = ".\\src\\main\\resources\\AfterPhoneNums.json";
     private static final String PHONE_NUMS_PATH = ".\\src\\main\\resources\\PhoneNums.txt";

@@ -39,7 +39,7 @@ public class HttpClinetUntil {
         postMethod.addParameter("v6ip", "");
         try {
             httpClient.executeMethod(postMethod);
-            System.out.println(postMethod.getResponseBodyAsString());
+            //System.out.println(postMethod.getResponseBodyAsString());
         } catch (IOException e) {
             return -1;
         } finally {
