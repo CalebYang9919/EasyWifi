@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+    <Headers>
+        <!--        防Baidu检测封ua-->
+        <!--        True:开启自动更换ua,False:手动更换ua,默认开启-->
+        <User-Agent-isAuto>True</User-Agent-isAuto>
+        <!--        默认为空，可手动添加-->
+        <User-Agent></User-Agent>
+    </Headers>
+</Request>
+
+        <!--备用Ua-->
+        <!--        Mozilla/5.0 (compatible; Windows NT 6.1; WOW64; MSIE 9.0; Trident/5.0; Core/1.47.277.400 QQBrowser/9.4.7658.400; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; .NET4.0C; .NET4.0E; qdesk 2.4.1266.203; Media Center PC 6.0; youxihe.1437; 4399Box.1272)-->
+        <!--        Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1)-->
+        <!--        Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.22 Safari/537.36 SE 2.X MetaSr 1.0-->
+        <!--        Mozilla/5.0 (Windows NT 10; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 BIDUBrowser/8.7 Safari/537.36-->
+        <!--        Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3831.211 Safari/537.36-->
+        <!--        Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAXTHON)-->
+        <!--        Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36-->
+        <!--        Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0-->
+        <!--        Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Shuame)-->
+        <!--        Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1-->
+        <!--        Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6709.400 QQBrowser/10.2.2149.400-->
+        <!--        Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2727.400-->
+        <!--        Mozilla/4.0 (compatible; Windows NT 6.1; WOW64; MSIE 8.0; Trident/4.0; QQBrowser/9.0.1850.400; .NET4.0C; .NET4.0E; youxihe.1437)-->
+        <!--        Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:34.8) AppleWebKit/427.8.3.4 Firefox/45.0-->

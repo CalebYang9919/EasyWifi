@@ -10,17 +10,22 @@ import java.util.Map;
 
 
 public class ProgramTest {
-//    private static final String AFTER_PHONE_NUMS_PATH = "C:/Users/19359/AfterPhoneNums.json";
-//    private static final String PHONE_NUMS_PATH = "C:/Users/19359/PhoneNums.txt";
+//    private static final String AFTER_PHONE_NUMS_PATH = ".\\src\\main\\resources\\AfterPhoneNums.json";
+//    private static final String PHONE_NUMS_PATH = ".\\src\\main\\resources\\PhoneNums.txt";
 
-    private static final String AFTER_PHONE_NUMS_PATH = ".\\src\\main\\resources\\AfterPhoneNums.json";
-    private static final String PHONE_NUMS_PATH = ".\\src\\main\\resources\\PhoneNums.txt";
+    private static final String AFTER_PHONE_NUMS_PATH = System.getProperty("user.dir") + "\\AfterPhoneNums.json";
+    private static final String PHONE_NUMS_PATH = System.getProperty("user.dir") + "\\PhoneNums.txt";
+
     //map缓存
     private static Map<String, Integer> cacheMap = new LinkedHashMap<>();
     //临时数据集
     private static Map<String, Integer> map = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
+        //HttpClient系统日志配置
+        System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.SimpleLog");
+        System.setProperty("org.apache.commons.logging.simplelog.showdatetime", "true");
+        System.setProperty("org.apache.commons.logging.simplelog.log.org.apache.commons.httpclient", "error");// "stdout"为标准输出格式，"error"为调试模式
         long beginTime; //记录连接网络后当前账户使用时间
         long endTime; //结束时间
         long phoneUseTime; //使用时间

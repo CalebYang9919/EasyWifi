@@ -1,5 +1,9 @@
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
 
 import java.io.*;
 import java.util.*;
@@ -19,6 +23,7 @@ public class FileUntil {
         reader.close();
         return jsonObject;
     }
+
 
     public static JSONObject ReadMapToJson(Map<String, Integer> maps) throws IOException {
         HashMap<String, Object> map = new HashMap<String, Object>();
@@ -57,6 +62,7 @@ public class FileUntil {
         return finalOut;
     }
 
+
     public static String GetPhoneNum(Map<String, Integer> map) throws IOException {
         String num = "";
         for (String item : map.keySet()) {
@@ -64,6 +70,25 @@ public class FileUntil {
             break;
         }
         return num;
+    }
+
+
+    public static String ReadXmlElement(String filepath, String elementIterator, String elementText) {
+        String ele = "";
+        try {
+            File file = new File(filepath);
+            SAXReader reader = new SAXReader();
+            Document doc = reader.read(file);
+            Element root = doc.getRootElement();
+            Element foo = null;
+            for (Iterator i = root.elementIterator(elementIterator); i.hasNext(); ) {
+                foo = (Element) i.next();
+            }
+            ele = foo.elementText(elementText);
+        } catch (DocumentException e) {
+            System.out.println("错误信息：" + e.getMessage());
+        }
+        return ele;
     }
 }
 
